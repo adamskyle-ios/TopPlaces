@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AED1446C-E2CC-4F08-93A1-449EAEEFA5D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TopPlaces</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>16B6C2D7-F6D6-4596-9D11-CB4E09538F57</key>
+		<string>https://github.com/adamskyle/TopPlaces.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TopPlaces.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>16B6C2D7-F6D6-4596-9D11-CB4E09538F57</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/adamskyle/TopPlaces.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>16B6C2D7-F6D6-4596-9D11-CB4E09538F57</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>16B6C2D7-F6D6-4596-9D11-CB4E09538F57</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TopPlaces</string>
+		</dict>
+	</array>
+</dict>
+</plist>
