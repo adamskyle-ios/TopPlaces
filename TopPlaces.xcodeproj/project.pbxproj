@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5385ADC118E4DE6F005F13A4 /* PhotosForPlaceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5385ADC018E4DE6F005F13A4 /* PhotosForPlaceTVC.m */; };
+		5385ADC518E583E6005F13A4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5385ADC318E583E6005F13A4 /* Main_iPad.storyboard */; };
 		53CAFBF718E47AAA0070B795 /* FlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CAFBF618E47AAA0070B795 /* FlickrPhotosTVC.m */; };
 		53CAFBFA18E47AD70070B795 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CAFBF918E47AD70070B795 /* ImageViewController.m */; };
 		53CAFBFD18E47CFA0070B795 /* TopPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CAFBFC18E47CFA0070B795 /* TopPlacesTVC.m */; };
+		53CBD31B18E5C44F004A714B /* FlickrPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBD31A18E5C44F004A714B /* FlickrPlacesTVC.m */; };
+		53CBD31E18E6E1D4004A714B /* RecentPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBD31D18E6E1D4004A714B /* RecentPhotosTVC.m */; };
+		53CBD32118E6E237004A714B /* RecentPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBD32018E6E237004A714B /* RecentPhotos.m */; };
 		53F9F7E218D84F2D001D77CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9F7E118D84F2D001D77CB /* Foundation.framework */; };
 		53F9F7E418D84F2D001D77CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9F7E318D84F2D001D77CB /* CoreGraphics.framework */; };
 		53F9F7E618D84F2D001D77CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9F7E518D84F2D001D77CB /* UIKit.framework */; };
@@ -40,12 +44,19 @@
 /* Begin PBXFileReference section */
 		5385ADBF18E4DE6F005F13A4 /* PhotosForPlaceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosForPlaceTVC.h; sourceTree = "<group>"; };
 		5385ADC018E4DE6F005F13A4 /* PhotosForPlaceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosForPlaceTVC.m; sourceTree = "<group>"; };
+		5385ADC418E583E6005F13A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TopPlaces/Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		53CAFBF518E47AAA0070B795 /* FlickrPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotosTVC.h; sourceTree = "<group>"; };
 		53CAFBF618E47AAA0070B795 /* FlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotosTVC.m; sourceTree = "<group>"; };
 		53CAFBF818E47AD70070B795 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		53CAFBF918E47AD70070B795 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		53CAFBFB18E47CFA0070B795 /* TopPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlacesTVC.h; sourceTree = "<group>"; };
 		53CAFBFC18E47CFA0070B795 /* TopPlacesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlacesTVC.m; sourceTree = "<group>"; };
+		53CBD31918E5C44F004A714B /* FlickrPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPlacesTVC.h; sourceTree = "<group>"; };
+		53CBD31A18E5C44F004A714B /* FlickrPlacesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPlacesTVC.m; sourceTree = "<group>"; };
+		53CBD31C18E6E1D4004A714B /* RecentPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosTVC.h; sourceTree = "<group>"; };
+		53CBD31D18E6E1D4004A714B /* RecentPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosTVC.m; sourceTree = "<group>"; };
+		53CBD31F18E6E237004A714B /* RecentPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotos.h; sourceTree = "<group>"; };
+		53CBD32018E6E237004A714B /* RecentPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotos.m; sourceTree = "<group>"; };
 		53F9F7DE18D84F2D001D77CB /* TopPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F9F7E118D84F2D001D77CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53F9F7E318D84F2D001D77CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,13 +139,20 @@
 				53F9F81618D84F49001D77CB /* Flickr Fetcher */,
 				53F9F7F018D84F2D001D77CB /* AppDelegate.h */,
 				53F9F7F118D84F2D001D77CB /* AppDelegate.m */,
+				5385ADC318E583E6005F13A4 /* Main_iPad.storyboard */,
 				53F9F7F318D84F2D001D77CB /* Main.storyboard */,
 				53CAFBFB18E47CFA0070B795 /* TopPlacesTVC.h */,
 				53CAFBFC18E47CFA0070B795 /* TopPlacesTVC.m */,
+				53CBD31918E5C44F004A714B /* FlickrPlacesTVC.h */,
+				53CBD31A18E5C44F004A714B /* FlickrPlacesTVC.m */,
 				5385ADBF18E4DE6F005F13A4 /* PhotosForPlaceTVC.h */,
 				5385ADC018E4DE6F005F13A4 /* PhotosForPlaceTVC.m */,
 				53CAFBF518E47AAA0070B795 /* FlickrPhotosTVC.h */,
 				53CAFBF618E47AAA0070B795 /* FlickrPhotosTVC.m */,
+				53CBD31C18E6E1D4004A714B /* RecentPhotosTVC.h */,
+				53CBD31D18E6E1D4004A714B /* RecentPhotosTVC.m */,
+				53CBD31F18E6E237004A714B /* RecentPhotos.h */,
+				53CBD32018E6E237004A714B /* RecentPhotos.m */,
 				53CAFBF818E47AD70070B795 /* ImageViewController.h */,
 				53CAFBF918E47AD70070B795 /* ImageViewController.m */,
 				53F9F7F918D84F2D001D77CB /* Images.xcassets */,
@@ -259,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53F9F7FA18D84F2D001D77CB /* Images.xcassets in Resources */,
+				5385ADC518E583E6005F13A4 /* Main_iPad.storyboard in Resources */,
 				53F9F7EC18D84F2D001D77CB /* InfoPlist.strings in Resources */,
 				53F9F7F518D84F2D001D77CB /* Main.storyboard in Resources */,
 			);
@@ -283,7 +302,10 @@
 				53CAFBFD18E47CFA0070B795 /* TopPlacesTVC.m in Sources */,
 				53CAFBF718E47AAA0070B795 /* FlickrPhotosTVC.m in Sources */,
 				53F9F7F218D84F2D001D77CB /* AppDelegate.m in Sources */,
+				53CBD31B18E5C44F004A714B /* FlickrPlacesTVC.m in Sources */,
 				5385ADC118E4DE6F005F13A4 /* PhotosForPlaceTVC.m in Sources */,
+				53CBD31E18E6E1D4004A714B /* RecentPhotosTVC.m in Sources */,
+				53CBD32118E6E237004A714B /* RecentPhotos.m in Sources */,
 				53F9F81A18D84F49001D77CB /* FlickrFetcher.m in Sources */,
 				53F9F7EE18D84F2D001D77CB /* main.m in Sources */,
 			);
@@ -308,6 +330,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5385ADC318E583E6005F13A4 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5385ADC418E583E6005F13A4 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		53F9F7EA18D84F2D001D77CB /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,8 +444,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TopPlaces/TopPlaces-Prefix.pch";
 				INFOPLIST_FILE = "TopPlaces/TopPlaces-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -427,8 +459,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TopPlaces/TopPlaces-Prefix.pch";
 				INFOPLIST_FILE = "TopPlaces/TopPlaces-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Kyle Adams. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FlickrPlacesTVC.h"
 
-@interface TopPlacesTVC : UITableViewController
+@interface TopPlacesTVC : FlickrPlacesTVC
 
 @end

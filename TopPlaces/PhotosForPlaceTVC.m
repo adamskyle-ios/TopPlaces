@@ -9,6 +9,7 @@
 #import "PhotosForPlaceTVC.h"
 #import "FlickrFetcher.h"
 #import "ImageViewController.h"
+#import "RecentPhotos.h"
 
 @interface PhotosForPlaceTVC ()
 
@@ -73,21 +74,46 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Flickr Photo" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = [self.photos[indexPath.row] valueForKey:FLICKR_PHOTO_TITLE];
+    cell.textLabel.text = [self titleLabelForPhoto:self.photos[indexPath.row]];
     cell.detailTextLabel.text = [self.photos[indexPath.row] valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
     
     return cell;
 }
 
+- (NSString *)titleLabelForPhoto:(NSDictionary *)photo
+{
+    NSString *title;
+    //Flickr always returns an empty string, not nil, so we need to check for length
+    if (![photo[FLICKR_PHOTO_TITLE] length] > 0 && [[photo valueForKeyPath:FLICKR_PHOTO_DESCRIPTION] length] > 0) {
+        title = [photo valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
+    } else if ([[photo valueForKeyPath:FLICKR_PHOTO_TITLE] length] > 0) {
+        title = photo[FLICKR_PHOTO_TITLE];
+    } else {
+       title = @"Unknown";
+    }
+    return title;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id detail = self.splitViewController.viewControllers[1];
+    if ([detail isKindOfClass:[UINavigationController class]]) {
+        detail = [((UINavigationController *)detail).viewControllers firstObject];
+    }
+    if ([detail isKindOfClass:[ImageViewController class]]) {
+        [self prepareImageViewController:detail toDisplayPhoto:self.photos[indexPath.row]];
+    }
+}
 
 #pragma mark - Navigation
 
  - (void)prepareImageViewController:(ImageViewController *)ivc toDisplayPhoto:(NSDictionary *)photo
  {
      ivc.imageURL = [FlickrFetcher URLforPhoto:photo format:FlickrPhotoFormatLarge];
-     ivc.title = [photo valueForKeyPath:FLICKR_PHOTO_TITLE];
+     ivc.title = [self titleLabelForPhoto:photo];
+     [RecentPhotos savePhotoToRecentPhotos:[photo mutableCopy]];
  }
- 
+
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
  {

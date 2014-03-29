@@ -1,6 +1,6 @@
 //
 //  ImageViewController.m
-//  Imaginarium
+//  TopPlaces
 //
 //  Created by Kyle Adams on 27-03-14.
 //  Copyright (c) 2014 Kyle Adams. All rights reserved.
@@ -36,7 +36,6 @@
 - (void)setImageURL:(NSURL *)imageURL
 {
     _imageURL = imageURL;
-//    self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]];
     [self startDownloadingImage];
 }
 
@@ -78,7 +77,7 @@
 
 - (void)setImage:(UIImage *)image
 {
-    self.scrollView.zoomScale = 1.0;
+    self.scrollView.zoomScale = .5;
     self.imageView.image = image;
     self.imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
     
